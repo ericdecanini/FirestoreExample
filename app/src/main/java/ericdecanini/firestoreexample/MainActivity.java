@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
     private void writeData() {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        // Create a new user with a first and last name
         Map<String, Object> user = new HashMap<>();
         user.put("name", editText.getText().toString());
 
